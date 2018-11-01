@@ -1,6 +1,5 @@
 from math import log10, fabs, floor
-import numpy as np
-import matplotlib.pyplot as plt
+
 '''
 Adding Material Properties files/library's myself
 
@@ -18,13 +17,12 @@ def Inconel_718(T):
     g = -5.7205
     h = 0.51115
     i = 0
-    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
-    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
-    ans = 10**(y1+y2)
+    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4 + f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
+    ans = 10**(y1)
     return ans
 
 def AL_ALY_1100(T):
-    # (UNS A91100)
+    # (UNS A91100)5
     # [W/(m-K)]
     a= 23.39172
     b= - 148.5733
@@ -253,7 +251,7 @@ def Balsa_lowdensity(T):
 #-------------------------------------------bleh
 #script for testing and plotting each function
 #why is this here ...... Sev
-
+'''
 StartT = 6
 EndT = 300
 Step = floor(fabs(StartT-EndT)+1)
@@ -292,3 +290,4 @@ ax3.plot(T,K3,color='green')
 ax4.plot(T,K4,color='brown')
 """
 plt.show()
+'''
