@@ -1,4 +1,4 @@
-from math import log10, fabs, floor
+from math import log10, fabs, floor, erf, exp
 
 '''
 Adding Material Properties files/library's myself
@@ -865,7 +865,7 @@ def Titanium_15_3_3_3(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-'''
+
 def Kevlar_Fiber(T):
     #Kevlar 49 Fiber
     # Data Range: 0.1-291
@@ -880,14 +880,13 @@ def Kevlar_Fiber(T):
     f=
     g=
     h=
-    i= 
 
-    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
-    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
-    ans = 10**(y1+y2)
+    y1 = (a + (b*(log10(T))))*((1-erf(2*(log10(T)-c)))/2)
+    y2 = (d+(e*(exp
+    ans=10**(y1+y2)
     return ans
 
-
+'''
 def Balsa_lowdensity(T):
     # (cross-laminate [0/90], flatwise)
     # Data Range: 92-300
