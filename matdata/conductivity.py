@@ -872,48 +872,39 @@ def Kevlar_Fiber(T):
     # Equation Range: 0-350
     # Curve Fit % error relative to data: 3.1
     # [W/(m-K)]
-    a=
-    b=
-    c=
-    d=
-    e=
-    f=
-    g=
-    h=
+    a=-2.4219
+    b=1.986637
+    c=1.257441
+    d=0.961209
+    e=-9.6106
+    f=0.777857
 
     y1 = (a + (b*(log10(T))))*((1-erf(2*(log10(T)-c)))/2)
-    y2 = (d+(e*(exp
+    y2 = (d+(e*(exp(-log10(T)/f)))*((1+erf(2*(log10(T)-c)))/2)
     ans=10**(y1+y2)
     return ans
 
-'''
-def Balsa_lowdensity(T):
-    # (cross-laminate [0/90], flatwise)
-    # Data Range: 92-300
-    # Equation Range: 75-300
-    # Curve Fit % error relative to data: 1.5
+def Kevlar_Composite(T):
+    #Kevlar 49 Composite
+    # Data Range: 6-302
+    # Equation Range: 0-350
+    # Curve Fit % error relative to data: 7.4
     # [W/(m-K)]
-    a=
-    b=
-    c=
-    d=
-    e=
-    f=
-    g=
-    h=
-    i= 
+    a=-2.65
+    b=1.986637
+    c=1.24851
+    d=0.57
+    e=-8
+    f=0.777857
 
-    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
-    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
-    ans = 10**(y1+y2)
+    y1 = (a + (b*(log10(T))))*((1-erf(2*(log10(T)-c)))/2)
+    y2 = (d+(e*(exp(-log10(T)/f)))*((1+erf(2*(log10(T)-c)))/2)
+    ans=10**(y1+y2)
     return ans
-    
-    
-    
-'''
+
 #-------------------------------------------bleh
 #script for testing and plotting each function
-#why is this here ...... Sev
+#why is this here? not just for data collection? ...... Sev
 '''
 StartT = 6
 EndT = 300
