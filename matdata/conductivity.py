@@ -282,7 +282,7 @@ def Brass(T):
     return ans
 
 def Copper_OFHC_50(T):
-    #UNS C10100/C10200
+    #Copper_OFHC_50_UNS C10100/C10200
     # Data Range: 4-300
     # Equation Range: N/A
     # Curve Fit % error relative to data: N/A
@@ -303,7 +303,7 @@ def Copper_OFHC_50(T):
     return ans
 
 def Copper_OFHC_100(T):
-    #UNS C10100/C10200
+    #Copper_OFHC_100_UNS C10100/C10200
     # Data Range: 4-300
     # Equation Range: N/A
     # Curve Fit % error relative to data: N/A
@@ -324,7 +324,7 @@ def Copper_OFHC_100(T):
     return ans
 
 def Copper_OFHC_150(T):
-    #UNS C10100/C10200
+    #Copper_OFHC_150_UNS C10100/C10200
     # Data Range: 4-300
     # Equation Range: N/A
     # Curve Fit % error relative to data: N/A
@@ -345,7 +345,7 @@ def Copper_OFHC_150(T):
     return ans
 
 def Copper_OFHC_300(T):
-    #UNS C10100/C10200
+    #Copper_OFHC_300_UNS C10100/C10200
     # Data Range: 4-300
     # Equation Range: N/A
     # Curve Fit % error relative to data: N/A
@@ -366,7 +366,7 @@ def Copper_OFHC_300(T):
     return ans
 
 def Copper_OFHC_500(T):
-    #UNS C10100/C10200
+    #Copper_OFHC_500_UNS C10100/C10200
     # Data Range: 4-300
     # Equation Range: N/A
     # Curve Fit % error relative to data: N/A
@@ -387,7 +387,7 @@ def Copper_OFHC_500(T):
     return ans
     
 def Fiberglass_Epoxy_Normal(T):
-    #G-10 CR Normal Direction
+    #Fiberglass Epoxy G-10 CR Normal Direction
     # Data Range: 4-300
     # Equation Range: 10-300
     # Curve Fit % error relative to data: 5
@@ -408,7 +408,7 @@ def Fiberglass_Epoxy_Normal(T):
     return ans
 
 def Fiberglass_Epoxy_Warp(T):
-    #G-10 CR Warp Direction
+    #Fiberglass Epoxy G-10 CR Warp Direction
     # Data Range: 4-300
     # Equation Range: 12-300
     # Curve Fit % error relative to data: 5
