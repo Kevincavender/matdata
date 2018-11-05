@@ -4,21 +4,21 @@ Linear Thermal expansion functions
 
 '''
 def Inconel_718:
-    # (UNS N107718)
+    #Inconel (UNS N107718)
 
-def AL_ALY_1100(T):
+def AL_ALY_3003F(T):
     #3003F Aluminum (UNS A93003)
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 4
-    #[] Unitless
+    #[m/m] 
     a=-4.1277E2
     b=-3.0389E-1
     c=8.7696E-3
     d=-9.9821E-6
     e=0
 
-    T_low =18
+    T_low =18.0
     f =-415.45
 
     if T <= T_low:
