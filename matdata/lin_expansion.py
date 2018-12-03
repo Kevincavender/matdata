@@ -5,6 +5,24 @@ Linear Thermal expansion functions
 '''
 def Inconel_718:
     #Inconel (UNS N107718)
+    #Data Range: 6-275
+    #Equation Range: 4-300
+    #Curve Fit % Error Relative to Data: 2
+    #[m/m]
+    a=-2.368E2
+    b=-2.120E-1
+    c=5.497E-3
+    d=-6.882E-6
+    e=0
+
+    T_low =20
+    f =-238.87
+
+    if T <= T_low:
+        ans = f
+    else:
+        ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
+    return ans
 
 def AL_ALY_3003F(T):
     #3003F Aluminum (UNS A93003)
@@ -28,16 +46,90 @@ def AL_ALY_3003F(T):
     return ans
 
 def AL_ALY_5083(T):
-    # Annealed (-O)
+    # Annealed (-O) UNS A95083
+    #Data Range: 4-300
+    #Equation Range: 4-300
+    #Curve Fit % Error Relative to Data: 4
+    #[m/m]
+    a=-4.1277E2
+    b=-3.0389E-1
+    c=8.7696E-3
+    d=-9.9821E-6
+
+    T_low = 18
+    f =-415.45
+
+    if T <= T_low:
+        ans = f
+    else:
+        ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3)))
+    return ans
 
 def AL_ALY_6061(T):
-    # Heat treated (-T6)
+    # Heat treated (-T6) UNS A96061
+    #Data Range: 4-300
+    #Equation Range: 4-300
+    #Curve Fit % Error Relative to Data: 4
+    #[m/m]
+    a=-4.1277E2
+    b=-3.0389E-1
+    c=8.7696E-3
+    d=-9.9821E-6
+    e=0
 
-def Beechwood_Phenolic_0(T):
-    # (cross-laminate [0/90], grain direction)
+    T_low =18
+    f =-415.45
+
+    if T <= T_low:
+        ans = f
+    else:
+        ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
+    return ans
 
 def Beechwood_Phenolic_90(T):
-    # (cross-laminate [0/90], flatwise)
+    # (cross-laminate [0/90], grain direction)
+    #Data Range: 77-293
+    #Equation Range: 77-293
+    #Curve Fit % Error Relative to Data: 0.89
+    #[m/m]
+    a=-944.081
+    b=2.909782
+    c=0.002971
+    d=-1E-05
+    e=1.23E-08
+
+    ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
+    return ans
+
+def Beechwood_Phenolic_uflat(T):
+    # (unidirectional, flatwise)
+    #Data Range: 4-300
+    #Equation Range: 4-300
+    #Curve Fit % Error Relative to Data: 4
+    #[m/m]
+    a=-683.9
+    b=2.18264
+    c=0.001701
+    d=-7.1E-06
+    e=1.04E-8	
+
+    ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
+    return ans
+
+def Beechwood_Phenolic_ugrain(T):
+    # (unidirectional, grain direction)
+    #Data Range: 4-300
+    #Equation Range: 4-300
+    #Curve Fit % Error Relative to Data: 4
+    #[m/m]
+    a=-189.138
+    b=0.646759
+    c=0.000202
+    d=-1.2E-06
+    e=1.85e-09
+
+    ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
+    return ans
 
 def Beryllium_Copper(T):
     # Common Spring material
@@ -114,7 +206,7 @@ def Silicon(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 4
-    #[] Unitless
+    #[m/m]
     a=
     b=
     c=
