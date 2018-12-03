@@ -26,3 +26,6 @@ class Materials_Data(object):
     #check what data is included
 
     #pull functions ... is T known? or will it be known....
+
+    #the problem is that there are materials with multiple different types. they need to be combined or another way has to be looked at.
+        
