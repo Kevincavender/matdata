@@ -902,10 +902,245 @@ def Kevlar_Composite(T):
     ans=10**(y1+y2)
     return ans
 
+def Polyurethane_31d(T):
+    #Polyurethane density: 31.88 kg/m3 (=1.99 lb/ft3 Freon filled)
+    # Data Range: 76-300
+    # Equation Range: 60-300
+    # Curve Fit % error relative to data: 2
+    # [W/(m-K)]
+    a=-3218.679
+    b=9201.61
+    c=-10956.66	
+    d=6950.102
+    e=-2476.94	
+    f=470.284
+    g=-37.1669
+    h=0
+    i=0
+
+    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
+    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
+    ans = 10**(y1+y2)
+    return ans
+
+def Polyurethane_32d(T):
+    #Polyurethane density: 32.04 kg/m3 (=2.0 lb/ft3 CO2 Filled)
+    # Data Range: 100-300
+    # Equation Range: 85-300
+    # Curve Fit % error relative to data: 1
+    # [W/(m-K)]
+    a=3788.43
+    b=-7642.66
+    c=4592.448
+    d=778.8423
+    e=-2214.434	
+    f=1090.293
+    g=-235.6349
+    h=19.66088	
+    i=0
+
+    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
+    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
+    ans = 10**(y1+y2)
+    return ans
+
+def Polyurethane_49d(T):
+    #Polyurethane density: 49.02 kg/m3 (=3.06 lb/ft3 He Filled)
+    # Data Range: 30-300
+    # Equation Range: 20-300
+    # Curve Fit % error relative to data: 1
+    # [W/(m-K)]
+    a=-33.898
+    b=117.81
+    c=-178.376
+    d=142.038
+    e=-63.034
+    f=14.958
+    g=-1.5468
+    h=0.020625
+    i=0
+
+    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
+    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
+    ans = 10**(y1+y2)
+    return ans
+
+def Polyurethane_64d(T):
+    #Polyurethane density: 64.08 kg/m3 (=4.00 lb/ft3 Freon filled)
+    # Data Range: 88-300
+    # Equation Range: 55-300
+    # Curve Fit % error relative to data: 2
+    # [W/(m-K)]
+    a=789.79
+    b=-2347.94
+    c=3024.61
+    d=-2206.76
+    e=989.238
+    f=-273.18
+    g=43.065
+    h=-2.9863
+    i=0
+
+    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
+    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
+    ans = 10**(y1+y2)
+    return ans
+
+def Polystyrene_31d(T):
+    #Polystyrene density: 31.88 kg/m3 (=1.99 lb/ft3 Freon filled)
+    # Data Range: 90-300
+    # Equation Range: 90-300
+    # Curve Fit % error relative to data: 2
+    # [W/(m-K)]
+    a=-1557.5
+    b=3984.7
+    c=-3940.245	
+    d=1649.668
+    e=12.80097	
+    f=-294.2616
+    g=119.5898
+    h=-20.6301
+    i=1.36067
+
+    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
+    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
+    ans = 10**(y1+y2)
+    return ans
+
+def Polystyrene_32d(T):
+    #Polystyrene density: 32.04 kg/m3 (=2.0 lb/ft3)
+    # Data Range: 33-300
+    # Equation Range: 25-300
+    # Curve Fit % error relative to data: 2
+    # [W/(m-K)]
+    a=-1145.45
+    b=4086.02
+    c=-6234.293
+    d=5260.106
+    e=-2649.914
+    f=797.0372
+    g=-132.5244
+    h=9.3968
+    i=0
+
+    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
+    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
+    ans = 10**(y1+y2)
+    return ans
+
+def Polystyrene_49d(T):
+    #Polystyrene density: 49.98 kg/m3 (=3.12 lb/ft3)
+    # Data Range: 7-300
+    # Equation Range: 4-300
+    # Curve Fit % error relative to data: 2
+    # [W/(m-K)]
+    a=-1.5194
+    b=-4.6449
+    c=11.643
+    d=-15.969
+    e=12.722
+    f=-5.821
+    g=1.4174
+    h=-0.14128
+    i=0
+
+    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
+    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
+    ans = 10**(y1+y2)
+    return ans
+
+def Polystyrene_99d(T):
+    #Polystyrene density: 99.96 kg/m3 (=6.24 lb/ft3)
+    # Data Range: 4-300
+    # Equation Range: 4-300
+    # Curve Fit % error relative to data: 3
+    # [W/(m-K)]
+    a=7.39582
+    b=-59.6737
+    c=160.58
+    d=-240.33
+    e=218.817
+    f=-124.155
+    g=42.9088
+    h=-8.26683
+    i=0.68082
+
+    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
+    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
+    ans = 10**(y1+y2)
+    return ans
+
+def PVC_20d(T):
+    #Polyvinyl Chloride (PVC) density: 20.02 kg/m3 (=1.25 lb/ft3 air fill gas)
+    # Data Range: 100-300
+    # Equation Range: 90-300
+    # Curve Fit % error relative to data: 1.5
+    # [W/(m-K)]
+    a=11314.56
+    b=-30824.32
+    c=34964.24
+    d=-21141.43	
+    e=7187.43
+    f=-1302.708
+    g=98.35252
+    h=0
+    i=0
+
+    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
+    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
+    ans = 10**(y1+y2)
+    return ans
+
+def PVC_56d(T):
+    #Polyvinyl Chloride (PVC) density: 56.06 kg/m3 (=3.5 lb/ft3 CO2 blown)
+    # Data Range: 125-300
+    # Equation Range: 100-300
+    # Curve Fit % error relative to data: 2
+    # [W/(m-K)]
+    a=-4123.51
+    b=9690.59
+    c=-7920.09
+    d=1572.897
+    e=1459.993
+    f=-1028.329
+    g=255.773
+    h=-23.31925
+    i=0
+
+    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
+    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
+    ans = 10**(y1+y2)
+    return ans
+
+
+
 #-------------------------------------------bleh
 #script for testing and plotting each function
 #why is this here? not just for data collection? ...... Sev
 '''
+
+def Polyurethane_64d(T):
+    #Polyurethane density: 64.08 kg/m3 (=4.00 lb/ft3 Freon filled)
+    # Data Range: 88-300
+    # Equation Range: 55-300
+    # Curve Fit % error relative to data: 2
+    # [W/(m-K)]
+    a=
+    b=
+    c=
+    d=
+    e=
+    f=
+    g=
+    h=
+    i=
+
+    y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
+    y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
+    ans = 10**(y1+y2)
+    return ans
+
+
 StartT = 6
 EndT = 300
 Step = floor(fabs(StartT-EndT)+1)
