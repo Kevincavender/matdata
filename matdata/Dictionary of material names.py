@@ -31,7 +31,8 @@ class Materials_Data(object):
         
 #Full names with their names in a dictionary
 
-#function_name : actual name
+#function_name   : actual name
+#updated with conductivity and lin expansion so far 12/10/2018
 material_names = {"Inconel_718":"Inconel 718 (UNS N107718)", "AL_ALY_1100":"1100 Aluminum (UNS A91100)", "AL_ALY_3003":" 3003F Aluminum (UNS A93003)",
                   "AL_ALY_5083":"5083 Aluminum (UNS A95083)", "AL_ALY_6061":"6061-T6 Aluminum (UNS A96061)", "AL_ALY_6063":"6063-T5 Aluminum (UNS A96063)",
                   "Balsa_lowdensity":"Balsa (density = 6 lb/ft3)", "Balsa_highdensity":"Balsa (density = 11 lb/ft3)", "Beechwood_Phenolic_90":"Beechwood-Phenolic (cross-laminate [0/90], grain direction)",
