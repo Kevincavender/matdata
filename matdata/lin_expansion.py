@@ -547,70 +547,54 @@ def Glass_Mat_Epoxy_cont(T):
     ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
     return ans
 
-def Polystyrene_51_1(T):
-    #Polystyrene density: 51.42 kg/m3 (=3.21 lb/ft3)
-    ##Data Range: 4-300
-    #Equation Range: 4-105
-    #Curve Fit % Error Relative to Data: 1
-    #[m/m]
-    a=-1.6948E3
-    b=-9.6845E-1
-    c=7.8268E-2
-    d=-2.4831E-4
-    e=0
-
-    T_low =6.4
-    f =-1697.9
-
-    if T <= T_low:
-        ans = f
-    else:
-        ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
-    return ans
-
-def Polystyrene_51_2(T):
+def Polystyrene_51(T):
     #Polystyrene density: 51.42 kg/m3 (=3.21 lb/ft3)
     ##Data Range: 4-300
     #Equation Range: 105-278
     #Curve Fit % Error Relative to Data: 1
     #[m/m]
-    a=-2.1168E3
-    b=1.0963E1
-    c=-3.5335E-2
-    d=1.3552E-4
-    e=-1.9890E-7	
+    if T > 105:
+        a=-2.1168E3
+        b=1.0963E1
+        c=-3.5335E-2
+        d=1.3552E-4
+        e=-1.9890E-7
+    if T <= 105 and T > 6.4:
+        a=-1.6948E3
+        b=-9.6845E-1
+        c=7.8268E-2
+        d=-2.4831E-4
+        e=0
+    else:
+        a=-1697.9
+        b=0
+        c=0
+        d=0
+        e=0
 
     ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
     return ans
 
-def Polystyrene_102_1(T):
+def Polystyrene_102(T):
     #Polystyrene density: 102.2 kg/m3 (=6.38 lb/ft3)
     ##Data Range: 4-300
     #Equation Range: 4-102
     #Curve Fit % Error Relative to Data: 1
     #[m/m]
-    a=-1.7494E3
-    b=2.0607E0
-    c=-4.7467E-2
-    d=1.2156E-3
-    e=-5.4405E-6
 
+    if T < 102:
+        a=-1.7494E3
+        b=2.0607E0
+        c=-4.7467E-2
+        d=1.2156E-3
+        e=-5.4405E-6
+    else:
+        a=-1.9374E3
+        b=3.6139E0
+        c=3.5974E-2
+        d=-1.5164E-4
+        e=2.1764E-7
    
-    ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
-    return ans
-
-def Polystyrene_102_2(T):
-    #Polystyrene density: 102.2 kg/m3 (=6.38 lb/ft3)
-    #Data Range: 4-300
-    #Equation Range: 102-286
-    #Curve Fit % Error Relative to Data: 2
-    #[m/m]
-    a=-1.9374E3
-    b=3.6139E0
-    c=3.5974E-2
-    d=-1.5164E-4
-    e=2.1764E-7
-
     ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
     return ans
     
