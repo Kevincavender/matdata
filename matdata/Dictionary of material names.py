@@ -51,4 +51,4 @@ material_names = {"Inconel_718":"Inconel 718 (UNS N107718)", "AL_ALY_1100":"1100
                   "PVC_20d":"Polyvinyl Chloride (PVC) density: 20.02 kg/m3 (=1.25 lb/ft3 air fill gas)","PVC_56d":"Polyvinyl Chloride (PVC) density: 56.06 kg/m3 (=3.5 lb/ft3 CO2 blown)","Polystyrene_31d":"Polystyrene density: 31.88 kg/m3 (=1.99 lb/ft3 Freon filled)",
                   "Polystyrene_32d":"Polystyrene density: 32.04 kg/m3 (=2.0 lb/ft3)","Polystyrene_49d":"Polystyrene density: 49.98 kg/m3 (=3.12 lb/ft3)","Polystyrene_99d":"Polystyrene density: 99.96 kg/m3 (=6.24 lb/ft3)",
                   "Polyurethane_31d":"Polyurethane density: 31.88 kg/m3 (=1.99 lb/ft3 Freon filled)","Polyurethane_32d":"Polyurethane density: 32.04 kg/m3 (=2.0 lb/ft3 CO2 Filled)","Polyurethane_49d":"Polyurethane density: 49.02 kg/m3 (=3.06 lb/ft3 He Filled)",
-                  "Polyurethane_64d":"Polyurethane density: 64.08 kg/m3 (=4.00 lb/ft3 Freon filled)"}
+                  "Polyurethane_64d":"Polyurethane density: 64.08 kg/m3 (=4.00 lb/ft3 Freon filled)","Polystyrene_51":"Polystyrene density: 51.42 kg/m3 (=3.21 lb/ft3)", "Polystyrene_102":"Polystyrene density: 102.2 kg/m3 (=6.38 lb/ft3)"}
