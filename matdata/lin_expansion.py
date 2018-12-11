@@ -24,7 +24,7 @@ def Inconel_718:
         ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
     return ans
 
-def AL_ALY_3003F(T):
+def AL_ALY_3003(T):
     #3003F Aluminum (UNS A93003)
     #Data Range: 4-300
     #Equation Range: 4-300
@@ -169,7 +169,7 @@ def Beryllium_a(T):
 
 def Beryllium_c(T):
     #c-axis
-     #Data Range: 75-500
+    #Data Range: 75-500
     #Equation Range: 75-500
     #Curve Fit % Error Relative to Data: 1
     #[m/m]
@@ -185,7 +185,7 @@ def Beryllium_c(T):
     
 def Beryllium_poly(T):
     #polycrystalline
-     #Data Range: 75-500
+    #Data Range: 75-500
     #Equation Range: 75-500
     #Curve Fit % Error Relative to Data: 1
     #[m/m]
@@ -218,7 +218,7 @@ def Fiberglass_Epoxy_Normal(T):
     ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
     return ans
 
-def Fiberglass_Epoxy_warp(T):
+def Fiberglass_Epoxy_Warp(T):
     #Fiberglass Epoxy G-10 CR Warp Direction
     #Data Range: 4-300
     #Equation Range: 12-300
@@ -517,7 +517,22 @@ def Ti_6AL_4V(T):
         ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
     return ans
 
-def Glass_Mat_Epoxy(T):
+def Glass_Mat_Epoxy_chop(T):
+    #Glass mat-epoxy, chopped strand mat
+    #Data Range: 77-293
+    #Equation Range: 77-293
+    #Curve Fit % Error Relative to Data: 2
+    #[m/m]
+    a=-6.5898E2
+    b=4.7697E0
+    c=-2.9638E-2
+    d=1.1501E-4
+    e=-1.4763E-7
+
+    ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
+    return ans
+
+def Glass_Mat_Epoxy_cont(T):
     #Glass mat-epoxy, continuous strand
     #Data Range: 77-293
     #Equation Range: 77-293
@@ -532,13 +547,103 @@ def Glass_Mat_Epoxy(T):
     ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
     return ans
 
-def Polystyrene(T):
-    #Polystyrene
-    #lin expansion density
+def Polystyrene_51_1(T):
+    #Polystyrene density: 51.42 kg/m3 (=3.21 lb/ft3)
+    ##Data Range: 4-300
+    #Equation Range: 4-105
+    #Curve Fit % Error Relative to Data: 1
+    #[m/m]
+    a=-1.6948E3
+    b=-9.6845E-1
+    c=7.8268E-2
+    d=-2.4831E-4
+    e=0
 
-def Polyurethane(T):
-    #Polyurethane
-    #lin expansion density
+    T_low =6.4
+    f =-1697.9
+
+    if T <= T_low:
+        ans = f
+    else:
+        ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
+    return ans
+
+def Polystyrene_51_2(T):
+    #Polystyrene density: 51.42 kg/m3 (=3.21 lb/ft3)
+    ##Data Range: 4-300
+    #Equation Range: 105-278
+    #Curve Fit % Error Relative to Data: 1
+    #[m/m]
+    a=-2.1168E3
+    b=1.0963E1
+    c=-3.5335E-2
+    d=1.3552E-4
+    e=-1.9890E-7	
+
+    ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
+    return ans
+
+def Polystyrene_102_1(T):
+    #Polystyrene density: 102.2 kg/m3 (=6.38 lb/ft3)
+    ##Data Range: 4-300
+    #Equation Range: 4-102
+    #Curve Fit % Error Relative to Data: 1
+    #[m/m]
+    a=-1.7494E3
+    b=2.0607E0
+    c=-4.7467E-2
+    d=1.2156E-3
+    e=-5.4405E-6
+
+   
+    ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
+    return ans
+
+def Polystyrene_102_2(T):
+    #Polystyrene density: 102.2 kg/m3 (=6.38 lb/ft3)
+    #Data Range: 4-300
+    #Equation Range: 102-286
+    #Curve Fit % Error Relative to Data: 2
+    #[m/m]
+    a=-1.9374E3
+    b=3.6139E0
+    c=3.5974E-2
+    d=-1.5164E-4
+    e=2.1764E-7
+
+    ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
+    return ans
+    
+
+def Polyurethane_32(T):
+    #Polyurethane density: 32.04 kg/m3 (=2.0 lb/ft3, Freon blown, parallel to foam rise)
+    #Data Range: 20-300
+    #Equation Range: 20-275
+    #Curve Fit % Error Relative to Data: 1.5
+    #[m/m]
+    a=-8.064E2
+    b=-5.049E-1
+    c=2.140E-2
+    d=-5.036E-5
+    e=5.192E-8
+
+    ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
+    return ans
+
+def Polyurethane_64(T):
+    #Polyurethane density: 64.07 kg/m3 (=4.0 lb/ft3, CO2 blown, parallel to foam rise)
+    #Data Range: 20-300
+    #Equation Range: 20-293
+    #Curve Fit % Error Relative to Data: 1
+    #[m/m]
+    a=-1.0647E3
+    b=3.1238E-1
+    c=2.2854E-2
+    d=-5.9123E-5
+    e=6.7482E-8
+
+    ans = a + (b*T) + (c*(T**(2))) + (d*(T**(3))) + (e*(T**(4)))
+    return ans
 
 def PVC(T):
     #Polyvinyl Chloride
