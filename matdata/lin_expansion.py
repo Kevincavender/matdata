@@ -8,6 +8,7 @@ def Inconel_718:
     #Data Range: 6-275
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 2
+    #10**5
     #[m/m]
     a=-2.368E2
     b=-2.120E-1
@@ -29,6 +30,7 @@ def AL_ALY_3003(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 4
+    #10**5
     #[m/m] 
     a=-4.1277E2
     b=-3.0389E-1
@@ -50,6 +52,7 @@ def AL_ALY_5083(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 4
+    #10**5
     #[m/m]
     a=-4.1277E2
     b=-3.0389E-1
@@ -70,6 +73,7 @@ def AL_ALY_6061(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 4
+    #10**5
     #[m/m]
     a=-4.1277E2
     b=-3.0389E-1
@@ -91,6 +95,7 @@ def Beechwood_Phenolic_90(T):
     #Data Range: 77-293
     #Equation Range: 77-293
     #Curve Fit % Error Relative to Data: 0.89
+    #10**-5
     #[m/m]
     a=-944.081
     b=2.909782
@@ -106,6 +111,7 @@ def Beechwood_Phenolic_uflat(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 4
+    #10**-5
     #[m/m]
     a=-683.9
     b=2.18264
@@ -121,6 +127,7 @@ def Beechwood_Phenolic_ugrain(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 4
+    #10**-5
     #[m/m]
     a=-189.138
     b=0.646759
@@ -136,6 +143,7 @@ def Beryllium_Copper(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 1.5
+    #10**5
     #[m/m]
     a=-3.1150E2
     b=-4.4498E-1
@@ -157,6 +165,7 @@ def Beryllium_a(T):
     #Data Range: 75-500
     #Equation Range: 75-500
     #Curve Fit % Error Relative to Data: 1
+    #10**5
     #[m/m]
     a=-134.17300
     b=-4.4051E-01
@@ -172,6 +181,7 @@ def Beryllium_c(T):
     #Data Range: 75-500
     #Equation Range: 75-500
     #Curve Fit % Error Relative to Data: 1
+    #10**5
     #[m/m]
     a=-86.08100
     b=-2.6372E-01
@@ -188,6 +198,7 @@ def Beryllium_poly(T):
     #Data Range: 75-500
     #Equation Range: 75-500
     #Curve Fit % Error Relative to Data: 1
+    #10**5
     #[m/m]
     a=-120.29800
     b=-3.4687E-01
@@ -208,6 +219,7 @@ def Fiberglass_Epoxy_Normal(T):
     #Data Range: 4-300
     #Equation Range: 10-300
     #Curve Fit % Error Relative to Data: 1.5
+    #10**5
     #[m/m]
     a=-7.198E2
     b=4.455E-1
@@ -223,6 +235,7 @@ def Fiberglass_Epoxy_Warp(T):
     #Data Range: 4-300
     #Equation Range: 12-300
     #Curve Fit % Error Relative to Data: 2
+    #10**5
     #[m/m]
     a=-2.469E2
     b=2.064E-1
@@ -238,6 +251,7 @@ def Glass_Fabric_Normal(T):
     #Data Range: 80-293
     #Equation Range: 80-285
     #Curve Fit % Error Relative to Data: 2
+    #10**5
     #[m/m]
     a=-7.179E2
     b=-3.157E0
@@ -253,6 +267,7 @@ def Glass_Fabric_warp(T):
     #Data Range: 80-293
     #Equation Range: 80-280
     #Curve Fit % Error Relative to Data: 2
+    #10**5
     #[m/m]
     a=-3.0897E2
     b=1.0245E0
@@ -268,6 +283,7 @@ def Invar(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 5
+    #10**5
     #[m/m]
     a=-5.265E1
     b=1.009E-1
@@ -288,6 +304,7 @@ def Molybdenum(T):
     #Data Range: 20-500
     #Equation Range: 20-350
     #Curve Fit % Error Relative to Data: 4
+    #10**-5
     #[m/m]
     a=-90.912613
     b=-0.127173
@@ -303,6 +320,7 @@ def Fe_225_Ni(T):
     #Data Range: 4-300
     #Equation Range: 4-265
     #Curve Fit % Error Relative to Data: 1.5
+    #10**5
     #[m/m]
     a=-2.104E2
     b=-5.699E-2
@@ -324,6 +342,7 @@ def Fe_325_Ni(T):
     #Data Range: 4-300
     #Equation Range: 4-265
     #Curve Fit % Error Relative to Data: 1.5
+    #10**5
     #[m/m]
     a=-2.104E2
     b=-5.699E-2
@@ -345,6 +364,7 @@ def Fe_50_Ni(T):
     #Data Range: 4-300
     #Equation Range: 4-265
     #Curve Fit % Error Relative to Data: 1.5
+    #10**5
     #[m/m]
     a=-2.104E2
     b=-5.699E-2
@@ -366,6 +386,7 @@ def Fe_90_Ni(T):
     #Data Range: 4-300
     #Equation Range: 4-265
     #Curve Fit % Error Relative to Data: 1.5
+    #10**5
     #[m/m]
     a=-2.104E2
     b=-5.699E-2
@@ -387,6 +408,7 @@ def Nylon(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 1
+    #10**5
     #[m/m]
     a=-1.389E3
     b=-1.561E-1
@@ -402,6 +424,7 @@ def SS_304(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 5
+    #10**5
     #[m/m]
     a=-2.9554E2
     b=-3.9811E-1
@@ -423,6 +446,7 @@ def SS_304L(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 5
+    #10**5
     #[m/m]
     a=-2.9554E2
     b=-3.9811E-1
@@ -444,6 +468,7 @@ def SS_310(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 5
+    #10**5
     #[m/m]
     a=-2.9554E2
     b=-3.9811E-1
@@ -465,6 +490,7 @@ def SS_316(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 5
+    #10**5
     #[m/m]
     a=-2.9554E2
     b=-3.9811E-1
@@ -486,6 +512,7 @@ def Teflon(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 2
+    #10**5
     #[m/m]
     a=-2.125E3
     b=-8.201E-1
@@ -501,6 +528,7 @@ def Ti_6AL_4V(T):
     #Data Range: 4-300
     #Equation Range: 4-300
     #Curve Fit % Error Relative to Data: 1.5
+    #10**5
     #[m/m]
     a=-1.711E2
     b=-2.140E-1
@@ -522,6 +550,7 @@ def Glass_Mat_Epoxy_chop(T):
     #Data Range: 77-293
     #Equation Range: 77-293
     #Curve Fit % Error Relative to Data: 2
+    #10**5
     #[m/m]
     a=-6.5898E2
     b=4.7697E0
@@ -537,6 +566,7 @@ def Glass_Mat_Epoxy_cont(T):
     #Data Range: 77-293
     #Equation Range: 77-293
     #Curve Fit % Error Relative to Data: 2
+    #10**5
     #[m/m]
     a=-4.392E2
     b=1.525E0
@@ -552,6 +582,7 @@ def Polystyrene_51(T):
     ##Data Range: 4-300
     #Equation Range: 105-278
     #Curve Fit % Error Relative to Data: 1
+    #10**5
     #[m/m]
     if T > 105:
         a=-2.1168E3
@@ -580,6 +611,7 @@ def Polystyrene_102(T):
     ##Data Range: 4-300
     #Equation Range: 4-102
     #Curve Fit % Error Relative to Data: 1
+    #10**5
     #[m/m]
 
     if T < 102:
@@ -604,6 +636,7 @@ def Polyurethane_32(T):
     #Data Range: 20-300
     #Equation Range: 20-275
     #Curve Fit % Error Relative to Data: 1.5
+    #10**-5
     #[m/m]
     a=-8.064E2
     b=-5.049E-1
@@ -619,6 +652,7 @@ def Polyurethane_64(T):
     #Data Range: 20-300
     #Equation Range: 20-293
     #Curve Fit % Error Relative to Data: 1
+    #10**-5
     #[m/m]
     a=-1.0647E3
     b=3.1238E-1
@@ -634,6 +668,7 @@ def PVC(T):
     #Data Range: 4-300
     #Equation Range: 4-280
     #Curve Fit % Error Relative to Data: 1
+    #10**-5
     #[m/m]
     a=-1033.8
     b=2.1922
@@ -649,6 +684,7 @@ def Sapphire(T):
     #Data Range: 20-293
     #Equation Range: 15-300
     #Curve Fit % Error Relative to Data: 4
+    #10**5
     #[m/m]
     a=-7.8850E+01
     b=-2.2346E-02
