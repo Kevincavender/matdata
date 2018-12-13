@@ -21,14 +21,6 @@ def Inconel_718(T):
     ans = 10**(y1)
     return ans
 
-    """
-    ref:
-Handbook on Materials for Superconducting Machinery 
-Mechanical, Thermal Electrical, and Magnetic Properties of Structural Materials. 
-Metals and Ceramics Information Center, Battelle, Columbus Laboratories. 
-November 1974 (With November 1975 and January 1977 Supplements) p 5.1.2-7.
-    """
-
 def AL_ALY_1100(T):
     # (UNS A91100)5
     # [W/(m-K)]
@@ -45,12 +37,6 @@ def AL_ALY_1100(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-    LNG Materials and Fluids. Ed. Douglas Mann
-    National Bureau of Standards, Cryogenics Division
-    First Edition, 1977.
-    """
 
 
 def AL_ALY_3003(T):
@@ -71,12 +57,6 @@ def AL_ALY_3003(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-    LNG Materials and Fluids. Ed. Douglas Mann 
-    National Bureau of Standards, Cryogenics Division
-    First Edition, 1977.
-    """
 
 
 def AL_ALY_5083(T):
@@ -97,14 +77,7 @@ def AL_ALY_5083(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann
-National Bureau of Standards, Cryogenics Division
-First Edition, 1977.
-    """
-
-
+    
 def AL_ALY_6061(T):
     # Heat treated (-T6)
     # [W/(m-K)]
@@ -122,15 +95,6 @@ def AL_ALY_6061(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-Thermal Properties Database for Materials at Cryogenic Temperatures. 
-Ed. Holly M. Veres. Volume 1
-
-Recommended values of the Thermophysical Properties of eight Alloys, 
-Major Constituents and their Oxides
-Y.S.Touloukian ( Purdue University) Feb, 1965
-    """
 
 def AL_ALY_6063(T):
     # Heat Treated (-T5)
@@ -150,13 +114,6 @@ def AL_ALY_6063(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division
-First Edition, 1977.
-    """
-
 
 def Balsa_lowdensity(T):
     #(density = 6 lb/ft3)
@@ -175,14 +132,7 @@ def Balsa_lowdensity(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division
-First Edition, 1977.
-    """
-
-
+    
 def Balsa_highdensity(T):
     #(density = 11 lb/ft3)
     # [W/(m-K)]
@@ -200,14 +150,7 @@ def Balsa_highdensity(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division
-First Edition, 1977.
-    """
-
-
+    
 def Beechwood_Phenolic_0(T):
     # (cross-laminate [0/90], grain direction)
     # Data Range: 92-300
@@ -228,14 +171,7 @@ def Beechwood_Phenolic_0(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann
-National Bureau of Standards, Cryogenics Division
-First Edition, 1977.
-    """
-
-
+    
 def Beechwood_Phenolic_90(T):
     # (cross-laminate [0/90], flatwise)
     # Data Range: 92-300
@@ -256,14 +192,7 @@ def Beechwood_Phenolic_90(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann
-National Bureau of Standards, Cryogenics Division
-First Edition, 1977.
-    """
-
-
+    
 def Beryllium_Copper(T):
     # Common Spring material
     # Data Range: 2-80
@@ -284,17 +213,7 @@ def Beryllium_Copper(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-Wadd Technical Report. Part II: Properties of Solids. Editor: Victor J. Johnson. 
-A compendium of the properties of materials at low temperature (phase I).
-National Bureau of Standards. October 1960
-
-2 Be, 98 Cu, Held at 300C for Two Hhours.
-R. Berman, E.L. Foster, H.M. Rosenberg, 
-Brit. J. A;;l. Physics 6, 181-182 (1955)
-    """
-
+    
 def Apiezon_N(T):
     # Data Range: 1-200
     # Equation Range: 2-200
@@ -314,13 +233,7 @@ def Apiezon_N(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-A correlation between thermal conductance and specific heat anomalies and the glass temperature of Apiezon N and T greases
-Cryogenics v.12 n.2 p.32-34 February 1972
-M.M. Kreitman, T. Ashworth, and M. Rechowicz
-    """
-
+    
 def Beryllium(T):
     # Data Range: 10-284
     # Equation Range: 14-284
@@ -340,14 +253,7 @@ def Beryllium(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-The TPRC Data Series. 
-Y.S. Touloukian, R.W. Powell, C.Y. Ho, and P.G. Klemens. 
-Volume 1: Thermal Conductivity-Metallic Elements and Alloys
-NewYork-Washington 1970
-    """
-
+    
 def Brass(T):
     #UNS C26000
     # Data Range: 5-116
@@ -368,13 +274,7 @@ def Brass(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-Thermal Conductivities of Copper and Copper Alloys
-Powell, R.L., Rogers, W.M., and Roder, H.M.
-Advances in Cryogenic Engineering vol. 2, 1956, pp. 166-171.
-    """
-
+    
 def Copper_OFHC_50(T):
     #Copper_OFHC_50_UNS C10100/C10200
     # Data Range: 4-300
@@ -395,14 +295,7 @@ def Copper_OFHC_50(T):
     y2 = 1 + (b * (T**(0.5))) + (d * T) + (f * (T**(1.5))) + (h * (T**(2)))
     ans = 10**(y1/y2)
     return ans
-    """
-    ref:
-Properties of Copper and Copper Alloys at Cryogenic Temperature
-NIST Monograph 177 
-N.J. Simon, E.S. Drexler, and R.P. Reed
-February 1992, p 7-23 
-    """
-
+    
 def Copper_OFHC_100(T):
     #Copper_OFHC_100_UNS C10100/C10200
     # Data Range: 4-300
@@ -423,14 +316,7 @@ def Copper_OFHC_100(T):
     y2 = 1 + (b * (T**(0.5))) + (d * T) + (f * (T**(1.5))) + (h * (T**(2)))
     ans = 10**(y1/y2)
     return ans
-    """
-    ref:
-Properties of Copper and Copper Alloys at Cryogenic Temperature
-NIST Monograph 177 
-N.J. Simon, E.S. Drexler, and R.P. Reed
-February 1992, p 7-23 
-    """
-
+    
 def Copper_OFHC_150(T):
     #Copper_OFHC_150_UNS C10100/C10200
     # Data Range: 4-300
@@ -451,14 +337,7 @@ def Copper_OFHC_150(T):
     y2 = 1 + (b * (T**(0.5))) + (d * T) + (f * (T**(1.5))) + (h * (T**(2)))
     ans = 10**(y1/y2)
     return ans
-    """
-    ref:
-Properties of Copper and Copper Alloys at Cryogenic Temperature
-NIST Monograph 177 
-N.J. Simon, E.S. Drexler, and R.P. Reed
-February 1992, p 7-23 
-    """
-
+   
 def Copper_OFHC_300(T):
     #Copper_OFHC_300_UNS C10100/C10200
     # Data Range: 4-300
@@ -479,14 +358,7 @@ def Copper_OFHC_300(T):
     y2 = 1 + (b * (T**(0.5))) + (d * T) + (f * (T**(1.5))) + (h * (T**(2)))
     ans = 10**(y1/y2)
     return ans
-    """
-    ref:
-Properties of Copper and Copper Alloys at Cryogenic Temperature
-NIST Monograph 177 
-N.J. Simon, E.S. Drexler, and R.P. Reed
-February 1992, p 7-23 
-    """
-
+    
 def Copper_OFHC_500(T):
     #Copper_OFHC_500_UNS C10100/C10200
     # Data Range: 4-300
@@ -507,14 +379,7 @@ def Copper_OFHC_500(T):
     y2 = 1 + (b * (T**(0.5))) + (d * T) + (f * (T**(1.5))) + (h * (T**(2)))
     ans = 10**(y1/y2)
     return ans
-    """
-    ref:
-Properties of Copper and Copper Alloys at Cryogenic Temperature
-NIST Monograph 177 
-N.J. Simon, E.S. Drexler, and R.P. Reed
-February 1992, p 7-23 
-    """
-    
+   
 def Fiberglass_Epoxy_Normal(T):
     #Fiberglass Epoxy G-10 CR Normal Direction
     # Data Range: 4-300
@@ -535,21 +400,7 @@ def Fiberglass_Epoxy_Normal(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-Thermal Properties Database for Materials at Cryogenic Temperatures.
-Ed. Holly M. Veres. 
-P. 4.503
-
-Thermal Conductivity Of Glass Fiber/Epoxy Composite Support Bands For Cryogenic Dewars, 
-J.C. Hust. 
-Phase II NBS, Boulder 1984.
-
-Thermal Conductivity of Solids at Room Temperature and Below, 
-G. Child, L.J. Erics, R.L. Powell. 
-NBS Monograph 131 (1973).
-    """
-
+    
 def Fiberglass_Epoxy_Warp(T):
     #Fiberglass Epoxy G-10 CR Warp Direction
     # Data Range: 4-300
@@ -570,21 +421,7 @@ def Fiberglass_Epoxy_Warp(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-Thermal Properties Database for Materials at Cryogenic Temperatures.
-Ed. Holly M. Veres. 
-P. 4.503
-
-Thermal Conductivity Of Glass Fiber/Epoxy Composite Support Bands For Cryogenic Dewars, 
-J.C. Hust. 
-Phase II NBS, Boulder 1984.
-
-Thermal Conductivity of Solids at Room Temperature and Below, 
-G. Child, L.J. Erics, R.L. Powell. 
-NBS Monograph 131 (1973).
-    """
-
+    
 def Glass_Fabric_He_Warp(T):
     #Polyester Glass Fabric Helium, Warp Direction
     # Data Range: 38-300
@@ -604,15 +441,7 @@ def Glass_Fabric_He_Warp(T):
     y1 = a+b*(log10(T)) + c*(log10(T))**2 + d*(log10(T))**3 + e*(log10(T))**4
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
-    return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division 
-First Edition, 1977.
-6/1/1979
-    """
-
+    
 def Glass_Fabric_N_Warp(T):
     #Polyester Glass Fabric Nitrogen, Warp Direction
     # Data Range: 80-300
@@ -633,14 +462,7 @@ def Glass_Fabric_N_Warp(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division 
-First Edition, 1977.
-6/1/1979
-    """
-
+    
 def Glass_Fabric_N_Normal(T):
     #Polyester Glass Fabric Nitrogen, Normal Direction
     # Data Range: 84-300
@@ -661,14 +483,7 @@ def Glass_Fabric_N_Normal(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division 
-First Edition, 1977.
-6/1/1979
-    """
-
+    
 def Invar(T):
     #Fe-36Ni UNS K93600
     # Data Range: 4-300
@@ -689,13 +504,7 @@ def Invar(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division
-First Edition, 1977.
-    """
-
+    
 def Lead(T):
     # Data Range: 4-296
     # Equation Range: 5-295
@@ -715,13 +524,7 @@ def Lead(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-A Compendium of the Properties of Materials at Low Temperatures (Phase 1)
-National Bureau of Standards Cryogenic Engineering Library. 
-Part 2: Properties of Solids. Victor J. Johnson Ed. October 1960, P 3.132.
-    """
-
+    
 def Molybdenum(T):
     # Data Range: 2-373
     # Equation Range: 4-300
@@ -741,19 +544,7 @@ def Molybdenum(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-CRC Materials Reference Handbook. 
-Editors: James Shackelford and William Alexander. 
-The TPRC Data Series. Y.S. Touloukian, R.W. Powell, C.Y. Ho, and P.G. Klemens. 
-Volume 1: Thermal Conductivity-Metallic Elements and Alloys
-NewYork-Washington 1970 
-AKA 
-Thermophysical Properties of Matter Volume 1 
-Thermal Conductivity-Metallic Elements and Alloys 
-R.S. Touloukian, R.W. Powell, C.Y. Ho, P.G. Klemens
-    """
-
+    
 def Fe_225_Ni(T):
     #Nickel Steel (Fe-2.25 Ni)
     # Data Range: 4-300
@@ -774,13 +565,7 @@ def Fe_225_Ni(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division
-First Edition, 1977.
-    """
-
+    
 def Fe_325_Ni(T):
     #Nickel Steel (Fe-3.25 Ni) UNS S20103
     # Data Range: 4-300
@@ -801,14 +586,7 @@ def Fe_325_Ni(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division 
-First Edition, 1977. 
-6/1/1979
-    """
-
+    
 def Fe_50_Ni(T):
     #Nickel Steel (Fe-5.0 Ni) UNS S20153
     # Data Range: 4-300
@@ -829,14 +607,7 @@ def Fe_50_Ni(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division 
-First Edition, 1977. 
-6/1/1979
-    """
-
+    
 def Fe_90_Ni(T):
     # Nickel Steel (Fe-9.0 Ni) UNS S21800
     # Data Range: 4-300
@@ -857,14 +628,7 @@ def Fe_90_Ni(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division 
-First Edition, 1977. 
-6/1/1979
-    """
-
+    
 def Platinum(T):
     # Data Range: 3-298
     # Equation Range: 4-295
@@ -884,13 +648,7 @@ def Platinum(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-Wadd Technical Report. Part II: Properties of Solids. Editor: Victor J. Johnson. 
-A compendium of the properties of materials at low temperature (phase I). 
-National Bureau of Standard. October 1960, 3.182
-    """
-
+    
 def Nylon(T):
     #Polyamide (Nylon)
     # Data Range: 4-300
@@ -911,16 +669,7 @@ def Nylon(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-Wadd Technical Report. Part II: Properties of Solids. Editor: Victor J. Johnson.
-A compendium of the properties of materials at low temperature (phase I).
-National Bureau of Standard. October 1960
-
-Thermal Properties Database for Materials at Cryogenic Temperature
-edited by Holly M. Veres
-    """
-
+    
 def Mylar(T):
     #Polyethylene Terephthalate (Mylar)
     # Data Range: 1-83
@@ -941,14 +690,7 @@ def Mylar(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-The low temperature thermal conductivity of a semi-crystalline polymer, polyethylene terephthalate 
-Journal of Physics C: Solid State Physics 
-v.8 n.19 p.3121-3129 October 1975 
-C. L. Choy and D. Grieg
-    """
-
+    
 def Kapton(T):
     #Polyimide (Kapton)
     # Data Range: 4-300
@@ -969,14 +711,7 @@ def Kapton(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-Thermal Conductivity of a Polyimide Film Between 4.2 and 300K,
-With and Without Alumina Particles as Filler, 
-D.L. Rule, D.R. Smith, and L.L. Sparks 
-NISTIR 3948, August 1990.
-    """
-
+    
 def SS_304(T):
     #304 Stainless UNS S30400
     # Data Range: 4-300
@@ -997,19 +732,7 @@ def SS_304(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division 
-First Edition, 1977. 
-6/1/1979
-
-Thermophysical Properties of Selected Aerospace Materials 
-Part II: Thermophysical Properties of Seven Materials 
-Y.S Touloukian and C.Y. Ho Editors 
-1976, p.39-46
-    """
-
+    
 def SS_304L(T):
     #304L Stainless UNS S30403
     # Data Range: 4-300
@@ -1030,19 +753,7 @@ def SS_304L(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division
-First Edition, 1977. 
-6/1/1979
-
-Thermophysical Properties of Selected Aerospace Materials 
-Part II: Thermophysical Properties of Seven Materials 
-Y.S Touloukian and C.Y. Ho Editors 
-1976, p.39-46
-    """
-
+    
 def SS_310(T):
     #310 Stainless UNS S31000
     # Data Range: 4-300
@@ -1063,19 +774,7 @@ def SS_310(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann 
-National Bureau of Standards, Cryogenics Division 
-First Edition, 1977. 
-6/1/1979
-
-Thermophysical Properties of Selected Aerospace Materials 
-Part II: Thermophysical Properties of Seven Materials 
-Y.S Touloukian and C.Y. Ho Editors 
-1976, p.39-46
-    """
-
+    
 def SS_316(T):
     #316 Stainless UNS S31600
     # Data Range: 0.1-291
@@ -1096,19 +795,7 @@ def SS_316(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. Ed. Douglas Mann
-National Bureau of Standards, Cryogenics Division 
-First Edition, 1977. 
-6/1/1979
-
-Thermophysical Properties of Selected Aerospace Materials 
-Part II: Thermophysical Properties of Seven Materials 
-Y.S Touloukian and C.Y. Ho Editors 
-1976, p.39-46
-    """
-
+    
 def Teflon(T):
     #Teflon
     # Data Range: 4-300
@@ -1129,12 +816,7 @@ def Teflon(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-Thermal Properties Database for Materials at Cryogenic Temperatures. 
-Ed. Holly M. Veres. P. 4.503
-    """
-
+    
 def Ti_6AL_4V(T):
     #Ti 6Al 4V UNS R56400
     # Data Range: 23-300
@@ -1182,12 +864,6 @@ def Titanium_15_3_3_3(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-Specific Heat and Thermal Conductivity of Four Commercial Titanium Alloys From 20 to 300K, 
-W.T. Ziegler, J.C. Mullins, and S.C.P. Hwa, 
-Advances in Cryogenic Engineering Vol. 8, 1963, p. 268-277.
-    """
 
 def Kevlar_Fiber(T):
     #Kevlar 49 Fiber
@@ -1206,22 +882,7 @@ def Kevlar_Fiber(T):
     y2 = (d+(e*(exp(-log10(T)/f)))*((1+erf(2*(log10(T)-c)))/2)
     ans=10**(y1+y2)
     return ans
-    """
-    ref:
-Thermal Conductivity of Kevlar 49 between 7 and 290 K,
-Ventura, G., and V. Martelli 
-Cryogenics 49 (2009): 735-37.
-
-Very Low Temperature Thermal Conductivity of Kevlar 49 
-Ventura, G., and V. Martelli 
-Cryogenics 49 (2009): 376-77.
-
-Temperature Variation of the Thermal Conductivity of Kevlar 
-Polymer Communications, 1985, Vol 26, May 
-B. Poulaert, J.C. Chieliens, C. Vandehande, and R. Legras
-(Digitized Data)
-    """
-
+    
 def Kevlar_Composite(T):
     #Kevlar 49 Composite
     # Data Range: 6-302
@@ -1239,20 +900,6 @@ def Kevlar_Composite(T):
     y2 = (d+(e*(exp(-log10(T)/f)))*((1+erf(2*(log10(T)-c)))/2)
     ans=10**(y1+y2)
     return ans
-    """
-    ref:
-Low-temperature thermal conductivity of two fibre-epoxy composites
-J.G. Hust, 
-Cryogenics vol. 15 (1975), pp. 125-128.
-
-Thermal Conductivityi Measurements of Fiberglass/Epoxy Structural Tubes from 4 K to 320 K 
-W.G. Foster, L.G. Naes, and C.B. Barnes
-AIAA paper 75-711, AIAA 10 th Thermophysics Conference, Denver, 1975.
-
-The thermal conductivity of Kevlar fibre-reinforced composites 
-J.P. Harris, B. Yates, J. Batchelor, and P.J. Garrington
-J. of Material Science 17 (1982), pp 2925-2935.
-    """
 
 def Polyurethane_31d(T):
     #Polyurethane density: 31.88 kg/m3 (=1.99 lb/ft3 Freon filled)
@@ -1274,14 +921,7 @@ def Polyurethane_31d(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. 
-Ed. Douglas Mann 
-National Bureau of Standards 
-First Edition, 1977. 6/1/1979
-    """
-
+    
 def Polyurethane_32d(T):
     #Polyurethane density: 32.04 kg/m3 (=2.0 lb/ft3 CO2 Filled)
     # Data Range: 100-300
@@ -1302,14 +942,7 @@ def Polyurethane_32d(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. 
-Ed. Douglas Mann 
-National Bureau of Standards 
-First Edition, 1977. 6/1/1979
-    """
-
+    
 def Polyurethane_49d(T):
     #Polyurethane density: 49.02 kg/m3 (=3.06 lb/ft3 He Filled)
     # Data Range: 30-300
@@ -1330,13 +963,6 @@ def Polyurethane_49d(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. 
-Ed. Douglas Mann 
-National Bureau of Standards 
-First Edition, 1977. 6/1/1979
-    """
 
 def Polyurethane_64d(T):
     #Polyurethane density: 64.08 kg/m3 (=4.00 lb/ft3 Freon filled)
@@ -1358,14 +984,7 @@ def Polyurethane_64d(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. 
-Ed. Douglas Mann 
-National Bureau of Standards 
-First Edition, 1977. 6/1/1979
-    """
-
+   
 def Polystyrene_31d(T):
     #Polystyrene density: 31.88 kg/m3 (=1.99 lb/ft3 Freon filled)
     # Data Range: 90-300
@@ -1386,14 +1005,7 @@ def Polystyrene_31d(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. 
-Ed. Douglas Mann 
-National Bureau of Standards 
-First Edition, 1977. 6/1/1979
-    """
-
+    
 def Polystyrene_32d(T):
     #Polystyrene density: 32.04 kg/m3 (=2.0 lb/ft3)
     # Data Range: 33-300
@@ -1414,14 +1026,7 @@ def Polystyrene_32d(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. 
-Ed. Douglas Mann 
-National Bureau of Standards 
-First Edition, 1977. 6/1/1979
-    """
-
+    
 def Polystyrene_49d(T):
     #Polystyrene density: 49.98 kg/m3 (=3.12 lb/ft3)
     # Data Range: 7-300
@@ -1442,14 +1047,7 @@ def Polystyrene_49d(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. 
-Ed. Douglas Mann 
-National Bureau of Standards 
-First Edition, 1977. 6/1/1979
-    """
-
+    
 def Polystyrene_99d(T):
     #Polystyrene density: 99.96 kg/m3 (=6.24 lb/ft3)
     # Data Range: 4-300
@@ -1470,14 +1068,7 @@ def Polystyrene_99d(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. 
-Ed. Douglas Mann 
-National Bureau of Standards 
-First Edition, 1977. 6/1/1979
-    """
-
+    
 def PVC_20d(T):
     #Polyvinyl Chloride (PVC) density: 20.02 kg/m3 (=1.25 lb/ft3 air fill gas)
     # Data Range: 100-300
@@ -1498,13 +1089,6 @@ def PVC_20d(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. 
-Ed. Douglas Mann 
-National Bureau of Standards 
-First Edition, 1977. 6/1/1979
-    """
 
 def PVC_56d(T):
     #Polyvinyl Chloride (PVC) density: 56.06 kg/m3 (=3.5 lb/ft3 CO2 blown)
@@ -1526,14 +1110,6 @@ def PVC_56d(T):
     y2 = f*(log10(T))**5 + g*(log10(T))**6 + h*(log10(T))**7 + i*(log10(T))**8
     ans = 10**(y1+y2)
     return ans
-    """
-    ref:
-LNG Materials and Fluids. 
-Ed. Douglas Mann 
-National Bureau of Standards 
-First Edition, 1977. 6/1/1979
-    """
-
 
 
 #-------------------------------------------bleh
