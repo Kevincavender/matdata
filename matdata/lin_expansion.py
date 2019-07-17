@@ -3,7 +3,7 @@ from math import log10, fabs, floor, erf, exp
 Linear Thermal expansion functions
 
 '''
-def Inconel_718:
+def Inconel_718(T):
     #Inconel (UNS N107718)
     #Data Range: 6-275
     #Equation Range: 4-300
